@@ -9,5 +9,5 @@ Most ot them were upscaled to _2k-10k resolution_ with AI. Enjoy! 🪅
 ## TODO
 
 - [ ] Split into categories
-- [ ] Rename each wallpaper into somewhat meaningfull
+- [ ] Rename each wallpaper into somewhat meaningful
 - [ ] Use some proper DB instead of github lol
