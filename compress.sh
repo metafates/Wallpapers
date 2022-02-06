@@ -1,12 +1,13 @@
 #!/bin/zsh
 
-OUTPUTDIR="./compressed"
+COMPRESSED="./compressed"
+MEDIUM="./medium"
 WALLPAPERS="./wallpapers"
 
 for IMG_PATH in $WALLPAPERS/*
 do
     IMG=$IMG_PATH:t
-    if [[ -f "$OUTPUTDIR/$IMG" ]]
+    if [[ -f "$COMPRESSED/$IMG" && -f "$MEDIUM/$IMG" ]]
     then
         continue
     fi
@@ -14,21 +15,24 @@ do
     EXT=$IMG:t:e
     if [[ $EXT = "jpg" ]]
     then
-        jpegoptim -m1 $IMG_PATH -qsod $OUTPUTDIR
+        jpegoptim -m1 $IMG_PATH -qsod $COMPRESSED
+        jpegoptim $IMG_PATH -qsod $MEDIUM
     elif [[ $EXT = "png" ]]
     then
-        pngquant --force --speed 11 --strip $IMG_PATH -o $OUTPUTDIR/$IMG 
+        pngquant --force --speed 11 --strip $IMG_PATH -o $COMPRESSED/$IMG 
+        pngquant --force --strip $IMG_PATH -o $MEDIUM/$IMG
     fi
 done
 
 # Check if some images were removed from wallpapers
-for IMG_PATH in $OUTPUTDIR/*
+for IMG_PATH in $COMPRESSED/*
 do
     IMG=$IMG_PATH:t
     # if not exists
     if [[ ! -a "$WALLPAPERS/$IMG" ]]
     then
         rm $IMG_PATH
+        rm $MEDIUM/$IMG
     fi
 done
 
