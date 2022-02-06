@@ -1,11 +1,10 @@
 # 🌉 Wallpapers
 
-My collections of wallpapers from r/unixporn && r/wallpaper and some other sites.\
-Also I took some wallpapers from [here](https://github.com/FrenzyExists/wallpapers), check it out!\
-Most ot them were upscaled to _2k-10k resolution_ with AI. Enjoy! 🪅\
+My collections of wallpapers from r/unixporn && r/wallpaper &&
+[here](https://github.com/FrenzyExists/wallpapers) and some other sites.\
+Most ot them were upscaled to _2k-10k resolution_ with AI. Enjoy! 🪅 \
 
-__[Web Gallery](https://metafates.one/Wallery/)__
-
+__[✨ Also I made a website where you can view them without downloading anything](https://metafates.one/Wallery/)__
 
 ![Collage](./collage.jpg)
 
