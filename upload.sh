@@ -4,8 +4,8 @@ echo "Compressing images"
 ./compress.sh
 
 echo "Pushing to GitHub"
-git rm -r --cached wallpapers
-git rm -r --cached compressed
+git rm -r --cached wallpapers --quiet
+git rm -r --cached compressed --quiet
 git add wallpapers/* 
 git add compressed/*
 git commit -am "[BOT] Wallpapers Updated" --quiet
