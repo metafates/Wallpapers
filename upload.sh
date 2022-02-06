@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+echo "Renaming images"
+./rename.sh
+
 echo "Compressing images"
 ./compress.sh
 
