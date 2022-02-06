@@ -20,3 +20,15 @@ do
         pngquant --force --speed 11 --strip $IMG_PATH -o $OUTPUTDIR/$IMG 
     fi
 done
+
+# Check if some images were removed from wallpapers
+for IMG_PATH in $OUTPUTDIR/*
+do
+    IMG=$IMG_PATH:t
+    # if not exists
+    if [[ ! -a "$WALLPAPERS/$IMG" ]]
+    then
+        rm $IMG_PATH
+    fi
+done
+
