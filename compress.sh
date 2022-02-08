@@ -16,11 +16,17 @@ do
     if [[ $EXT = "jpg" ]]
     then
         jpegoptim -m1 $IMG_PATH -qsod $COMPRESSED
+        convert -resize 1% $COMPRESSED/$IMG $COMPRESSED/$IMG
+        
         jpegoptim -m30 $IMG_PATH -qsod $MEDIUM
+        convert -resize 5% $MEDIUM/$IMG $MEDIUM/$IMG
     elif [[ $EXT = "png" ]]
     then
         pngquant --force --speed 11 --quality=0-1 --strip $IMG_PATH -o $COMPRESSED/$IMG 
+        convert -resize 1% $COMPRESSED/$IMG $COMPRESSED/$IMG
+        
         pngquant --force --speed 8 --strip $IMG_PATH -o $MEDIUM/$IMG
+        convert -resize 5% $MEDIUM/$IMG $MEDIUM/$IMG
     fi
 done
 
