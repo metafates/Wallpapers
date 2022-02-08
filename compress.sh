@@ -7,10 +7,10 @@ WALLPAPERS="./wallpapers"
 for IMG_PATH in $WALLPAPERS/*
 do
     IMG=$IMG_PATH:t
-    if [[ -f "$COMPRESSED/$IMG" && -f "$MEDIUM/$IMG" ]]
-    then
-        continue
-    fi
+    # if [[ -f "$COMPRESSED/$IMG" && -f "$MEDIUM/$IMG" ]]
+    # then
+    #     continue
+    # fi
     
     EXT=$IMG:t:e
     if [[ $EXT = "jpg" ]]
