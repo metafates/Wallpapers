@@ -20,7 +20,7 @@ do
     elif [[ $EXT = "png" ]]
     then
         pngquant --force --speed 11 --quality=0-1 --strip $IMG_PATH -o $COMPRESSED/$IMG 
-        pngquant --force --speed 10 --quality=0-50 --strip $IMG_PATH -o $MEDIUM/$IMG
+        pngquant --force --speed 8 --strip $IMG_PATH -o $MEDIUM/$IMG
     fi
 done
 
