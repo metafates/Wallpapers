@@ -7,20 +7,20 @@ WALLPAPERS="./wallpapers"
 for IMG_PATH in $WALLPAPERS/*
 do
     IMG=$IMG_PATH:t
-    # if [[ -f "$COMPRESSED/$IMG" && -f "$MEDIUM/$IMG" ]]
-    # then
-    #     continue
-    # fi
+    if [[ -f "$COMPRESSED/$IMG" && -f "$MEDIUM/$IMG" ]]
+    then
+        continue
+    fi
     
     EXT=$IMG:t:e
     if [[ $EXT = "jpg" ]]
     then
         jpegoptim -m1 $IMG_PATH -qsod $COMPRESSED
-        jpegoptim -m2 $IMG_PATH -qsod $MEDIUM
+        jpegoptim -m3 $IMG_PATH -qsod $MEDIUM
     elif [[ $EXT = "png" ]]
     then
         pngquant --force --speed 11 --quality=0-1 --strip $IMG_PATH -o $COMPRESSED/$IMG 
-        pngquant --force --speed 11 --quality=0-1 --strip $IMG_PATH -o $MEDIUM/$IMG
+        pngquant --force --speed 10 --quality=0-50 --strip $IMG_PATH -o $MEDIUM/$IMG
     fi
 done
 
