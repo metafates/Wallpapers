@@ -1,4 +1,4 @@
 title = "Wallery"
-use_dark_theme = false
+dark_theme_support = false
 animations = false
-github_raw_root_url = "https://raw.githubusercontent.com/metafates/Wallpapers/pictura"
+remote = "https://raw.githubusercontent.com/metafates/Wallpapers/pictura"
