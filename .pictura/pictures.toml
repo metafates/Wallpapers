@@ -4422,3 +4422,36 @@ id = 109506
 compressed = "/Users/lain/Pictures/walls/.pictura/compressed/w-2048_h-1083_c-473b45_i-109506.jpeg"
 medium = "/Users/lain/Pictures/walls/.pictura/medium/w-2048_h-1083_c-473b45_i-109506.jpeg"
 original = "/Users/lain/Pictures/walls/wallpapers/1624150838230.jpeg"
+
+[[pictures]]
+name = "wallhaven-m98zg9"
+extension = "jpeg"
+width = 5640
+height = 2400
+color = "081939"
+id = 336445
+compressed = "/Users/lain/Pictures/walls/.pictura/compressed/w-5640_h-2400_c-081939_i-336445.jpeg"
+medium = "/Users/lain/Pictures/walls/.pictura/medium/w-5640_h-2400_c-081939_i-336445.jpeg"
+original = "/Users/lain/Pictures/walls/wallpapers/wallhaven-m98zg9.jpeg"
+
+[[pictures]]
+name = "wallhaven-l35pw2"
+extension = "jpeg"
+width = 1920
+height = 1254
+color = "473631"
+id = 415354
+compressed = "/Users/lain/Pictures/walls/.pictura/compressed/w-1920_h-1254_c-473631_i-415354.jpeg"
+medium = "/Users/lain/Pictures/walls/.pictura/medium/w-1920_h-1254_c-473631_i-415354.jpeg"
+original = "/Users/lain/Pictures/walls/wallpapers/wallhaven-l35pw2.jpeg"
+
+[[pictures]]
+name = "wallhaven-e7jj6r"
+extension = "jpeg"
+width = 3800
+height = 1900
+color = "353d49"
+id = 184251
+compressed = "/Users/lain/Pictures/walls/.pictura/compressed/w-3800_h-1900_c-353d49_i-184251.jpeg"
+medium = "/Users/lain/Pictures/walls/.pictura/medium/w-3800_h-1900_c-353d49_i-184251.jpeg"
+original = "/Users/lain/Pictures/walls/wallpapers/wallhaven-e7jj6r.jpeg"
