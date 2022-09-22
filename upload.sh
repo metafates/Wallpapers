@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 pictura sync
 git add -A
