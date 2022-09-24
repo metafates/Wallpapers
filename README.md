@@ -1,6 +1,6 @@
 # Wallpapers
 
-My collection of 300+ wallpapers managed with [pictura](https://github.com/metafates/pictura)!
+My collection of 300+ wallpapers managed with [pictura](https://github.com/metafates/pictura)! (still, it's very buggy)
 
 View them here [https://metafates.one/Wallpapers](https://metafates.one/Wallpapers) (it has lazy loading with compressed images but still may take a while to load sometimes)
 
